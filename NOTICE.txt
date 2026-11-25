@@ -1,0 +1,6 @@
+ASTC Encoder 5.7.1
+Copyright Arm Limited.
+Official project: https://github.com/ARM-software/astc-encoder
+Official release archive: astcenc-5.7.1-linux-x64.zip
+The included tools/astcenc binary is the SSE2 executable from the official Linux x86-64 release.
+Release archive SHA-256: f1d576f0801e7701548da78d782f4bf70dfde3673a238d1a2ac0ebd3511b2f37
