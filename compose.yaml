@@ -1,0 +1,17 @@
+services:
+  jayn-gmg-backend:
+    build: .
+    ports:
+      - "${PORT:-8000}:8000"
+    environment:
+      PORT: "8000"
+      JAYN_DATA_DIR: /app/data
+      ASTCENC_BIN: /app/tools/astcenc
+      MAX_UPLOAD_BYTES: "${MAX_UPLOAD_BYTES:-268435456}"
+      MAX_TEXTURE_PIXELS: "${MAX_TEXTURE_PIXELS:-16777216}"
+      CORS_ORIGINS: "${CORS_ORIGINS:-*}"
+    volumes:
+      - jayn-gmg-data:/app/data
+    restart: unless-stopped
+volumes:
+  jayn-gmg-data:
